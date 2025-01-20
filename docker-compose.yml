@@ -3,8 +3,8 @@ services:
   scraper:
     image: cfurl/st4_back_scrape24:v1
     container_name: scrape24
-    networks:
-      - some_name
+    #networks:
+     # - some_name
     volumes:
       - st4_data:/home/data
 
@@ -25,8 +25,8 @@ services:
     depends_on:
       wgrib2:
         condition: service_completed_successfully
-    networks:
-      - some_name
+    #networks:
+     # - some_name
     volumes:
       - st4_data:/home/data
 
