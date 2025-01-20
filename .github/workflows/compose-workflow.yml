@@ -1,8 +1,8 @@
 name: Publish to npm
 
 on:
-  # push:
-  #  branches:
+   schedule:
+   - cron: "10 12 * * *"
   #    - master # or any branch you want to trigger the publish
   workflow_dispatch:
 
