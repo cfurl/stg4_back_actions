@@ -2,9 +2,9 @@ name: Publish to npm
 
 on:
    schedule:
-    - cron: "45 12 * * *"
+    - cron: '45 12 * * *'
   
-     workflow_dispatch:
+     #workflow_dispatch:
 
 jobs:
   build-and-publish:
