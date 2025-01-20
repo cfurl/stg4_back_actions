@@ -30,10 +30,10 @@ services:
     volumes:
       - st4_data:/home/data
 
-networks:
-  some_name:
-    external:
-        name: st4_net
+#networks:
+ # some_name:
+  #  external:
+   #     name: st4_net
         
 volumes:
   st4_data:
