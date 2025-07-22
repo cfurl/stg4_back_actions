@@ -34,6 +34,4 @@ jobs:
         run: docker-compose up -d
         continue-on-error: false
 
-      - name: Tear down containers and volumes
-        if: always()
-        run: docker-compose down -v
+    
