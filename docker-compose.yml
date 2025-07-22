@@ -29,6 +29,8 @@ services:
      # - some_name
     volumes:
       - st4_data:/home/data
+    env_file:
+      - .env
 
 #networks:
  # some_name:

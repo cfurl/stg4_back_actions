@@ -31,7 +31,7 @@ jobs:
           echo "AWS_REGION=${{ secrets.AWS_REGION }}" >> .env
 
       - name: Run Docker Compose (with AWS env)
-        run: docker-compose up -d
+        run: docker-compose up
         continue-on-error: false
 
     
