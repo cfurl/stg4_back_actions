@@ -31,7 +31,8 @@ jobs:
           echo "AWS_REGION=${{ secrets.AWS_REGION }}" >> .env
 
       - name: Run Docker Compose (with AWS env)
-        run: docker-compose up --abort-on-container-exit
+        run: docker-compose up -d
+        continue-on-error: false
 
       - name: Tear down containers and volumes
         if: always()
